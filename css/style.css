@@ -782,7 +782,7 @@ body {
 }
 .footer__form .form__button:hover {
   background-color: transparent;
-  border: 1px solid var(--accent_color);
+  border: 2px solid var(--accent_color);
   color: var(--accent_color);
 }
 .footer a {
