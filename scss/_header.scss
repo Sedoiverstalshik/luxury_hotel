@@ -1,0 +1,129 @@
+.header{
+  &__wrap{
+    @extend .flex-aic-jcsb;
+  }
+  &__logo{
+    @extend .flex-column-aic;
+    max-width: 25.6rem;
+    padding: 4.4rem 2.9rem 4.5rem 4.1rem;
+    font-family: 'Adobe Garamond Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.2;
+    letter-spacing: 0.15em;
+    color: #14274A;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--accent_color);
+    border-radius: 0 0 4.5rem 4rem;
+    z-index: 1;
+    span{
+      font-size: 1.5rem;
+      line-height: 1.2;
+      letter-spacing: 0.6em;
+    }
+  }
+  &__menu-list{
+    @extend .flex-aic-jcsb;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--light_color);
+    max-width: 70rem;
+    li {
+      margin-left: 3rem;
+    }
+  }
+  &__menu-list li a{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    border-bottom: 0.5px solid transparent;
+  }
+  &__menu-list a:hover{
+    border-bottom: 0.5px solid var(--light_color);
+    transition: border .3s linear;
+  }
+  .menu__burger{
+    display: none;
+    z-index: 1;
+  }
+  &__menu-btn{
+    width: 4rem;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    &::before, &::after{
+      content:'';
+      display: block;
+      width: 100%;
+      height: 0.3rem;
+      background-color: var(--light_color);
+    }
+    span{
+      display: block;
+      width: 100%;
+      height: 0.3rem;
+      background-color: var(--light_color);
+      margin: 1rem 0;
+    }
+  }
+  .active &__menu-btn span{
+    display: none;
+  }
+  .active &__menu-btn::before{
+    transform: rotate(45deg) translate(2px, 0);
+  }
+  .active &__menu-btn::after{
+    transform: rotate(-45deg) translate(2px, 0px);
+  }
+
+}
+
+@media (max-width:850px){
+  .header{
+    &__menu-list li a{
+      font-size: 2rem;
+    }
+  }
+}
+@media (max-width:750px){
+  .header{
+    &__logo{
+      padding: 2rem;
+    }
+    &__menu{
+      display: none;
+    }
+    .active .menu{
+      display: block;
+    }
+    &__menu-list{
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #274B63;
+      width: 100%;
+      height: 100vh;
+      padding-top: 10rem;
+      li{
+        margin-left: 0;
+      }
+    }
+    .menu__burger{
+      display: block;
+    }
+  }
+}
+@media (max-width:470px){
+  .header{
+    &__logo{
+      padding: 2rem;
+      font-size: 3rem;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.footer{
+  background-color: var(--text_color) ;
+  color: var(--light_color);
+  padding: 6.6rem 0;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    top: -7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4rem solid transparent;
+    border-bottom: 3rem solid var(--text_color);
+    display: block;
+    width: 0;
+    height: 0;
+  }
+  &__wrap{
+    @extend .flex-aic-jcsb;
+  }
+  &__logo{
+    @extend .flex-column;
+    font-family: 'Adobe Garamond Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: 0.15em;
+    margin-bottom: 2.2rem;
+    span{
+      font-size: 0.9rem;
+      line-height: 1.22;
+      letter-spacing: 0.6em;
+    }
+  }
+  &__address, &__phone, &__email{
+    font-size: 1.4rem;
+    line-height: 1.22;
+    display: block;
+  }
+  &__menu-list{
+    font-size: 1.6rem;
+    color: #F7F7F7;
+    li + li{
+      margin-top: 2.5rem;
+    }
+  }
+  &__social{
+    font-size: 16px;
+    color: #F7F7F7;
+    li + li{
+      margin-top: 2rem;
+    }
+    svg{
+      fill: var(--light_color);
+      margin-right: 2.6rem;
+    }
+    a{
+      @extend .flex-aic;
+    }
+  }
+  &__form{
+    font-size: 16px;
+    line-height: 20px;
+    p{
+      margin-bottom: 3rem;
+    }
+    input{
+      max-width: 28rem;
+      border: 2px solid var(--accent_color);
+      border-radius: 0.5rem 0 0 0.5rem;
+      padding: 1.5rem 2.6rem;
+      background-color: transparent;
+      font-size: inherit;
+      color: inherit;
+      cursor: pointer;
+      &::placeholder{
+        font-size: inherit;
+        color: inherit;
+      }
+    }
+    .form__button{
+      background-color: var(--accent_color) ;
+      border-radius: 0 0.5rem 0.5rem 0;
+      border:1px solid transparent;
+      color: var(--text_color);
+      margin-left: -0.5rem;
+      transition: all .3s linear;
+      &:hover{
+        background-color: transparent ;
+        border:1px solid var(--accent_color);
+        color: var(--accent_color);
+      }
+    }
+  }
+  a{
+    transition: color .3s linear;
+  }
+  a svg{
+    transition: fill .3s linear;
+  }
+  a:hover{
+    color: var(--accent_color);
+  }
+  a:hover svg{
+    fill: var(--accent_color);
+  }
+}
+
+@media (max-width:1000px){
+  .footer{
+    &__wrap{
+      flex-wrap: wrap;
+      gap:5rem 3rem;
+    }
+  }
+}
+@media (max-width:550px){
+  .footer{
+    text-align: center;
+    &__wrap{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item{
+      margin-bottom: 2rem;
+    }
+  }
+}
+@media (max-width:400px){
+  .footer{
+    &__form input{
+      padding: 1rem 1.5rem;
+    }
+  }
+}

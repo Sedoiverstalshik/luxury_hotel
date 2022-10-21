@@ -1,0 +1,50 @@
+// roboto
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+
+  src: local("Roboto"),
+       url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+       url("/fonts/Roboto/Roboto-Regular.woff") format("woff"),
+       url("/fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+}
+
+// montserrat
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 400;
+
+  src: local("montserrat"),
+       url("/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+       url("/fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
+       url("/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 700;
+
+  src: local("montserrat"),
+       url("/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
+       url("/fonts/Montserrat/Montserrat-Bold.woff") format("woff"),
+       url("/fonts/Montserrat/Montserrat-Bold.ttf") format("ttf");
+}
+
+
+// adobeGaram
+@font-face {
+  font-family: "adobe-garam";
+  font-style: normal;
+  font-weight: 700;
+
+  src: local("adobeGaram"),
+       url("/fonts/AdobeGaram/AGaramondPro-Bold.woff2") format("woff2"),
+       url("/fonts/AdobeGaram/AGaramondPro-Bold.woff") format("woff"),
+       url("/fonts/AdobeGaram/AGaramondPro-Bold.ttf") format("ttf");
+}
+
+
+
