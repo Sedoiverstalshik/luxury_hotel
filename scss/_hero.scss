@@ -1,5 +1,5 @@
 .hero{
-  height: 100vh;
+  height: 100%;
   margin-top: 5%;
   padding-bottom: 4rem;
   &__bg{
@@ -13,7 +13,7 @@
       height: 100vh;
       position: absolute;
       z-index: -1;
-      max-height: 108rem;
+      height: 108rem;
     }
     img{
     position: absolute;
@@ -23,7 +23,7 @@
     left: 0;
     z-index: -1;
     object-fit: cover;
-    max-height: 108rem;
+    height: 108rem;
     }
   }
   &__content{
