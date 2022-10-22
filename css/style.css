@@ -74,6 +74,7 @@ body {
   font-family: "montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 .container {
