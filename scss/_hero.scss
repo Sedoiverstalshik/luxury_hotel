@@ -2,7 +2,7 @@
   height: 100%;
   margin-top: 5%;
   padding-bottom: 4rem;
-  margin-bottom: 10rem;
+  margin-bottom: 14rem;
   &__bg{
     &::after{
       content: "";
@@ -102,6 +102,7 @@
 
 @media (max-width:850px){
   .hero{
+    margin-bottom: 0;
     &__bg{
       &::after{
         height: 80rem;
@@ -145,6 +146,7 @@
 }
 @media (max-width:470px){
   .hero{
+    margin-bottom: 8rem;
     &__content{
       margin: 5rem 0;
       text-align: center;

@@ -8,7 +8,7 @@ burger.addEventListener('click', (e) => {
 
 
 
-const swiper = new Swiper('.testimonials__swiper', {
+const testimonials__slider = new Swiper('.testimonials__swiper', {
   loop: true,
   slidesPerView: 1,
 
@@ -16,4 +16,13 @@ const swiper = new Swiper('.testimonials__swiper', {
     nextEl: '.testimonials__button-next',
     prevEl: '.testimonials__button-prev',
   },
+});
+const rooms__slider = new Swiper('.rooms__swiper', {
+  loop: true,
+  slidesPerView: 1,
+  pagination: {
+    el: '.rooms__pagination',
+    clickable: true,
+  },
+
 });

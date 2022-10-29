@@ -1,3 +1,4 @@
+// header
 .header{
   &__wrap{
     @extend .flex-aic-jcsb;
@@ -68,6 +69,27 @@
       margin: 1rem 0;
     }
   }
+  &__contact{
+    background-color: var(--text_color);
+    height: 50rem;
+    width: 100%;
+  }
+  &__contact-wrap{
+    @extend .flex-column-aic;
+  }
+  &__top{
+    @extend.flex-aic-jcsb;
+    width: 100%;
+  }
+  &__contact-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 1.22;
+    color: var(--light_color);
+    margin: revert;
+  }
   .active &__menu-btn span{
     display: none;
   }
@@ -84,6 +106,12 @@
   .header{
     &__menu-list li a{
       font-size: 2rem;
+    }
+    &__contact{
+      height: 35rem;
+    }
+    &__contact-title{
+      font-size: 6rem;
     }
   }
 }
@@ -124,6 +152,12 @@
     &__logo{
       padding: 2rem;
       font-size: 3rem;
+    }
+    &__contact{
+      height: 25rem;
+    }
+    &__contact-title{
+      font-size: 4rem;
     }
   }
 }

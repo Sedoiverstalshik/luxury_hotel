@@ -1,3 +1,4 @@
+// footer
 .footer{
   background-color: var(--text_color) ;
   color: var(--light_color);
@@ -109,6 +110,9 @@
 
 @media (max-width:1000px){
   .footer{
+    &::after{
+      top: -6rem;
+    }
     &__wrap{
       flex-wrap: wrap;
       gap:5rem 3rem;
