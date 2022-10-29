@@ -233,7 +233,6 @@ body {
   text-decoration: none;
   background-color: var(--accent_color);
   border-radius: 0 0 4.5rem 4rem;
-  z-index: 1;
 }
 .header__logo span {
   font-size: 1.5rem;
@@ -245,7 +244,7 @@ body {
   font-style: normal;
   font-weight: 400;
   color: var(--light_color);
-  max-width: 70rem;
+  max-width: 75rem;
 }
 .header__menu-list li {
   margin-left: 3rem;
@@ -331,7 +330,7 @@ body {
   .header__menu {
     display: none;
   }
-  .header .active .menu {
+  .header .active {
     display: block;
   }
   .header__menu-list {
@@ -350,8 +349,7 @@ body {
             transform: translateX(-50%);
     background-color: #274B63;
     width: 100%;
-    height: 100vh;
-    padding-top: 10rem;
+    height: 100%;
   }
   .header__menu-list li {
     margin-left: 0;

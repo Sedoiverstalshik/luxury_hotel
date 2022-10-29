@@ -18,7 +18,6 @@
     text-decoration: none;
     background-color: var(--accent_color);
     border-radius: 0 0 4.5rem 4rem;
-    z-index: 1;
     span{
       font-size: 1.5rem;
       line-height: 1.2;
@@ -31,7 +30,7 @@
     font-style: normal;
     font-weight: 400;
     color: var(--light_color);
-    max-width: 70rem;
+    max-width: 75rem;
     li {
       margin-left: 3rem;
     }
@@ -101,6 +100,9 @@
   }
 
 }
+// .header__menu .menu .active{
+//   display: block;
+// }
 
 @media (max-width:850px){
   .header{
@@ -123,7 +125,7 @@
     &__menu{
       display: none;
     }
-    .active .menu{
+    .active{
       display: block;
     }
     &__menu-list{
@@ -136,8 +138,7 @@
       transform: translateX(-50%);
       background-color: #274B63;
       width: 100%;
-      height: 100vh;
-      padding-top: 10rem;
+      height: 100%;
       li{
         margin-left: 0;
       }
