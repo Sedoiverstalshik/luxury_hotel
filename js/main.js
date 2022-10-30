@@ -26,3 +26,4 @@ const rooms__slider = new Swiper('.rooms__swiper', {
   },
 
 });
+
